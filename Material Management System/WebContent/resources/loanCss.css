@@ -1,0 +1,403 @@
+.modal {
+  width: 100%; /* Set the desired width for the modal */
+  height: 700px; /* Set the desired height for the modal */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+ 
+/* Individual Inputs */
+input[type="text"], input[type="email"], input[type="password"] {
+	padding: 6px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	margin-right: 15px; /* Added margin to align inputs */
+}
+
+/* Grid Inputs */
+.grid-input {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 2px;
+	align-items: left;
+}
+
+.grid-input input {
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* Buttons */
+.button {
+	float: right;
+	display: inline-block;
+	padding: 4px 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #45a049;
+}
+
+/* Label Alignment */
+.form-group {
+	display: flex;
+	align-items: left;
+}
+
+.form-group label {
+	flex: 0 0 120px; /* Fixed width for labels */
+	text-align: left; /* Align labels to the right */
+	margin-left: 20px;
+	/* Added margin for spacing between label and input */
+}
+
+.tab-navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.tab-navigation li {
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+	background-color: #4caf50;
+	color: white;
+} 
+
+.tab-navigation li.active {
+	font-weight: bold;
+	background-color: #4caf50;
+	color: white;
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+.active_link {
+	
+	color: #fff;
+	font-family: sans-serif;
+
+	text-decoration: none;
+	border: none;
+	position: relative
+}
+
+
+/* Styles for the update button */
+.button-update {
+	padding: 5px 10px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.button-update:hover {
+	background-color: #45a049;
+}
+
+.form-group {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0px;
+	margin-bottom: 10px;
+	align-items: left;
+}
+input[type="date"] {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-sizing: border-box;
+            /* Additional styles */
+            background-color: #fff;
+            color: #333;
+        }
+
+label {
+	font-weight: bold;
+	padding-right: 5px;
+	text-align: right;
+}
+
+input[type="text"],
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  /* Additional combobox styles */
+  background-color: #fff;
+  color: #333;
+   text-align: left;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.containertable {
+  max-width: 1700px;
+  margin: 0 auto;
+  overflow-x: auto; /* Add horizontal scrollbar if content overflows */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background-color: #fff;
+  color: #333;
+}
+
+table th, table td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+.item-list {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-top: 100px;
+}
+
+.search-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.search-form input[type="submit"] {
+	padding: 8px 16px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: left;
+}
+
+.search-form input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.search-form input[type="text"]::placeholder {
+	color: #999;
+}
+
+#newStatus {
+	width: 150px;
+	padding: 8px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #333;
+}
+
+#newStatus option {
+	padding: 8px;
+	font-size: 16px;
+}
+.tab-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+.tab-link {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.tab-link:hover {
+  background-color: #ddd;
+}
+.required-field1 {
+      color: red;
+    }
+.tab-link.active {
+  background-color: #27AE60 ;
+  color: white;
+}
+.combobox-container {
+  position: relative;
+  display: inline-block;
+}
+
+#combobox-input {
+  width: 225px;
+  padding: 5px;
+}
+
+#combobox-list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  font-family: 'Poppins', sans-serif; 
+  text-transform: lowercase;
+  font-size: 11px; 
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+#combobox-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#combobox-list li:hover {
+  background-color: #f2f2f2;
+}
+* Style the form container */
+.date-range-form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Style the form fields */
+.form-field {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+/* Style the submit button */
+.view-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+   
+}
+
+.view-button:hover {
+  background-color: #45a049;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
